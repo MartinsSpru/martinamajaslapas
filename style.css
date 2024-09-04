@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+main{
+    color: #FFFFFF;
+    position: sticky;
+    margin-top: 400px;
+    background-color: rgba(0,0,0,.1);
+    backdrop-filter: blur(50px);
+    text-align: center;
+    padding-top: 40px;
+
+}
+body{
+    min-height: 100vh;
+    background: url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+p{
+    font-size: 1.2rem;
+    padding-bottom: 7px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+hr{
+    padding: 20px;
+    color: #ffffff00;
+    border-color: #ffffff00;
+}
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.1);
+    backdrop-filter: blur(50px);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.header::after{
+    content: 0;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, red);
+}
+
+#check{
+    display: none;
+}
+.logo img{
+    height:7rem;
+    width: auto;
+}
+.navbar a{
+    font-size: 1.15rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+
+}
+.icons{
+    position: absolute;
+    font-size: 2.8rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: none;
+    right: 5%;
+}
+
+
+@media (max-width: 992px){
+    .header{
+        padding: 1.3rem 5%;
+    }
+}
+@media (max-width: 768px){
+    p{
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    .icons{
+        display: inline-flex;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0,0,0,.1);
+        backdrop-filter: blur(50px);
+        transition: .3s ease;
+        overflow: hidden;
+    }
+    #check:checked~.navbar {
+        height: 14rem;
+
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        transition: .3s ease;
+        opacity: 0;
+    }
+    #check:checked~.navbar a{
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+    }
+}
