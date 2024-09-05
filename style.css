@@ -23,7 +23,7 @@ body{
     background-size: cover;
     background-position: center;
 }
-p{
+main p{
     font-size: 1.2rem;
     padding-bottom: 7px;
     margin-left: 20%;
@@ -90,13 +90,68 @@ hr{
     right: 5%;
 }
 
-
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(41, 42, 44);
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+.footercontainer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.footerobject{
+    display: inline-block;
+    align-items: center;
+    padding-left: 1rem;
+}
+.footerobjecttext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:hidden;
+    padding-right: 1rem;
+}
+.footerobjectmini {
+    margin: 0;
+    padding: 0;
+}
+.footerobject img{
+    display: inline-block;
+    height: 6rem;
+    padding-left: 1rem;
+}
 @media (max-width: 992px){
     .header{
         padding: 1.3rem 5%;
     }
 }
 @media (max-width: 768px){
+    .footerobject{
+        display: inline-block;
+        align-items: center;
+        padding-left: 0;
+    }
+    .footerobjecttext{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow:hidden;
+        padding-right: 0;
+    }
+    .footercontainer{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
     p{
         margin-left: 1px;
         margin-right: 1px;
