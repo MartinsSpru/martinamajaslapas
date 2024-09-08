@@ -6,7 +6,19 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
+.webselector{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+}
+.webselectoritem{
+    height: 290px;
+    width: 290px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #6EACD3;
+}
 main{
     color: #FFFFFF;
     position: sticky;
