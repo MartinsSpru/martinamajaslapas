@@ -12,12 +12,15 @@
     grid-template-columns: auto auto auto;
 }
 .webselectoritem{
+    padding: 10px;
+}
+.webselectoritem img{
     height: 290px;
     width: 290px;
-    padding: 10px;
     border-style: solid;
     border-width: 10px;
-    border-color: #6EACD3;
+    border-color: #4b7b99;
+    border-radius: 10%;
 }
 main{
     color: #FFFFFF;
