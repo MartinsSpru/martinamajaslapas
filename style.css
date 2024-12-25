@@ -214,3 +214,43 @@ hr{
         transition-delay: calc(.15s * var(--i));
     }
 }
+@media (max-width: 425px){
+    .footerobject img{
+        display: inline-block;
+        height: 4rem;
+        padding-left: 1rem;
+    }
+    .footerobjectmini {
+    margin: 0;
+    padding:  0;
+    padding-right: 1rem;
+    font-size: 0.8rem
+    }
+    main p{
+        margin-left: 1px;
+        margin-right: 1px;
+        font-size:1rem;
+    }
+    h2{
+        font-size:1.3rem;
+    }
+    hr{
+        padding:10px;
+    }
+    main{
+        color: #FFFFFF;
+        position: sticky;
+        margin-top: 15rem;
+        background-color: rgba(0,0,0,.1);
+        backdrop-filter: blur(50px);
+        text-align: center;
+        padding-top: 40px;
+    }
+    h1{
+        font-size:1.87rem;
+    }
+    .logo img{
+    height:5rem;
+    width: auto;
+}
+}
