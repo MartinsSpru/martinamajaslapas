@@ -39,7 +39,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: url('img/background.jpg');
+    background: url('img/background.webp');
     background-size: cover;
     background-position: center;
 }
