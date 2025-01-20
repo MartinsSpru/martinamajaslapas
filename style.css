@@ -97,6 +97,7 @@ hr{
     text-decoration: none;
     font-weight: 500;
     margin-left: 2.5rem;
+    transition: padding 1s ease, color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
 
 }
 .icons{
@@ -116,7 +117,7 @@ hr{
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
     padding: 0.5rem 1rem; /* Add padding for button effect */
     border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    transition: padding 0.5s ease, background-color 0.3s ease, color 0.3s ease, border-radius 0.2s ease; /* Smooth transition */
 }
 .footer {
     position: relative;
