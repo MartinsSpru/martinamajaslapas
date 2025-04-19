@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const elements = document.querySelectorAll('main p, main h1, main h2, main h3, main sub, main img');
+    const elements = document.querySelectorAll('main p, main h1, main h2, main h3, main sub, main img, #buttonlinetop a');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
