@@ -86,7 +86,7 @@ main{
     position: sticky;
     margin-top: 40dvh;
     backdrop-filter: blur(50px);
-    height: 30dvh;
+    min-height: 30dvh;
     text-align: center;
     padding-top: 40px;
     z-index: 1; /* Ensure main element stays on top */
