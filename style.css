@@ -78,7 +78,7 @@
     z-index: 1; /* Ensure main element stays on top */
     padding-top: 0px;
     height: 0;
-
+    min-height: 0dvh;
 }
 main{
     position: relative;
