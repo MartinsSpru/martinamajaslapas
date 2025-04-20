@@ -6,6 +6,23 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('img/background_compressed.webp') center/cover no-repeat;
+}
+main p, main h1, main h2, main h3, main sub, main img, #buttonlinetop a, .offer, .offer li {
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+main p.visible, main h1.visible, main h2.visible, main h3.visible, main sub.visible, main img.visible, #buttonlinetop a.visible, .offer.visible, .offer li.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+}
 #pakalpojumuhol{
     display: flex;
     flex-wrap: wrap;
@@ -118,14 +135,6 @@ main{
     padding-top: 40px;
     z-index: 1; /* Ensure main element stays on top */
 }
-
-body {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background: url('img/background_compressed.webp') center/cover no-repeat;
-}
 .sub{
     font-size: 14px;
     color: #FFFFFF;
@@ -144,16 +153,6 @@ main p {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease-out, transform 1s ease-out;
-}
-main p, main h1, main h2, main h3, main sub, main img, #buttonlinetop a, .offer, .offer li {
-    opacity: 0; /* Start hidden */
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-main p.visible, main h1.visible, main h2.visible, main h3.visible, main sub.visible, main img.visible, #buttonlinetop a.visible, .offer.visible, .offer li.visible {
-    opacity: 1; /* Fade in */
-    transform: translateY(0); /* Move to original position */
 }
 hr{
     padding: 20px;
@@ -229,7 +228,6 @@ hr{
     transition: padding 0.5s ease, background-color 0.3s ease, color 0.3s ease, border-radius 0.2s ease; 
 }
 .footer {
-    
     position: relative;
     left: 0;
     bottom: 0;
