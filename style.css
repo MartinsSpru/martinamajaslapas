@@ -431,6 +431,7 @@ hr{
         backdrop-filter: blur(50px);
         text-align: center;
         padding-top: 40px;
+        min-height: 47dvh;
     }
     h1{
         font-size:1.87rem;
