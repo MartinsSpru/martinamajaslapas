@@ -20,7 +20,6 @@ body {
     background-position: center; 
     background-repeat: no-repeat; 
 }
-
 main p, main h1, main h2, main h3, main sub, main img, #buttonlinetop a, .offer, .offer li {
     opacity: 0; /* Start hidden */
     transform: translateY(20px);
