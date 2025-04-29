@@ -11,8 +11,16 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
-    background: url('img/fwfqqf.webp') center/cover no-repeat;
+    background-image: url('image.avif'); /* First choice: AVIF */
+    background-image: image-set(
+        url('img/fwfqqf.avif') type('image/avif'),
+        url('img/fwfqqf.webp') type('image/webp'),
+        url('img/fwfqqf.jpg') type('image/jpeg')); /* Fallbacks: WEBP and JPEG */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
+
 main p, main h1, main h2, main h3, main sub, main img, #buttonlinetop a, .offer, .offer li {
     opacity: 0; /* Start hidden */
     transform: translateY(20px);
